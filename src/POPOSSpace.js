@@ -1,8 +1,7 @@
 // src/POPOSSpace.js
 import './POPOSSpace';
 
-function POPOSSpace(props) {
-  const { name, image, address } = props
+function POPOSSpace({ name, image, address, hours }) {
   return (
     <div className='POPOSSpace'>
       <img src={`${process.env.PUBLIC_URL}/images/${image}`} 
@@ -12,6 +11,7 @@ function POPOSSpace(props) {
       />
       <h1>{name}</h1>
       <div>{address}</div>
+      <p><em>{hours}</em></p>
     </div>
   )
 };
