@@ -1,5 +1,5 @@
 // src/POPOSSpace.js
-import './POPOSSpace';
+import './POPOSSpace.css';
 import { Link } from 'react-router-dom';
 
 function POPOSSpace({ name, image, address, hours, id }) {
@@ -13,12 +13,16 @@ function POPOSSpace({ name, image, address, hours, id }) {
         />
       </Link>
       <h1>
-        <Link to={`/details/${id}`}>
+        <Link 
+          className='POPOSSpace-title'
+          to={`/details/${id}`}>
           {name}
         </Link>
       </h1>
-      <div>{address}</div>
-      <p><em>{hours}</em></p>
+      <div className='POPOSSpace-info'>
+        <div>{address}</div>
+        <div><em>{hours}</em></div>
+      </div>
     </div>
   )
 };
