@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import POPOSSpace from '../POPOSSpace/POPOSSpace';
 import './POPOSList.css';
 import data from '../../sfpopos-data.js';
+import RandomSpace from '../RandomSpace/RandomSpace';
 
 function POPOSList() {
   const [ query, setQuery ] = useState('');
@@ -35,6 +36,7 @@ function POPOSList() {
           onChange={(evt) => setQuery(evt.target.value)}
         />
         <button>search</button>
+        <RandomSpace />
       </form>
       <div className="POPOSList">
         { spaces }

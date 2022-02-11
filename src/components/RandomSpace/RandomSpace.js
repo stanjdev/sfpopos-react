@@ -12,7 +12,7 @@ function RandomSpace() {
         navigate(`/details/${id}`);
       }}
     >
-      Show me a random space
+      random space
     </button>
   )
 }

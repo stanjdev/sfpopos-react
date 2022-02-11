@@ -22,8 +22,9 @@ form input, form button {
 
 form input {
 	flex: 1;
-	border-top-left-radius: 0.5em;
-	border-bottom-left-radius: 0.5em;
+	/* border-top-left-radius: 0.5em; */
+	/* border-bottom-left-radius: 0.5em; */
+  border-radius: 0.5em;
 }
 
 form button {
