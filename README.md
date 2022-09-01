@@ -81,6 +81,9 @@ docker build -t sfpopos-react .
 docker run -p 3001:3000 --rm --name sfpopos-react-container sfpopos-react:latest
 ```
 
+### Access Via Browser
+Go to http://localhost:3001
+
 ### See what's running
 ```bash
 docker ps --format '{{.Names}}'
